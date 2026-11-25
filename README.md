@@ -2,8 +2,6 @@
 
 Conformance checking on synthetic motor-claims event logs that counts known rework loops and costs each one in days and money.
 
-[![ci](https://github.com/SlateGitOrg/claimsflow/actions/workflows/ci.yml/badge.svg)](https://github.com/SlateGitOrg/claimsflow/actions/workflows/ci.yml)
-
 ## Why
 
 An insurer's documented claims process has eleven steps. The real process, reconstructed from event logs, runs dozens of variants, and a large share of claims loop back through earlier steps. Average cycle time hides this completely: a claim that loops twice and a claim with one slow step look identical in the mean.
@@ -43,7 +41,7 @@ flowchart LR
 Requires Python 3.11 or newer. There are no dependencies.
 
 ```bash
-git clone https://github.com/SlateGitOrg/claimsflow.git
+git clone https://github.com/PranitaG14/claimsflow.git
 cd claimsflow
 python -m unittest discover -s tests -v   # 20 tests
 python -m src.demo                        # full report on 50,000 synthetic claims
@@ -121,9 +119,3 @@ docs/
 ## License
 
 MIT - see [LICENSE](LICENSE).
-
-## Maintainer
-
-Dev Bhatt maintains claimsflow, bringing more than six years of experience in data analytics, automation, and controls. His work includes building automated pipelines and reconciliations across large-scale datasets.
-
-For project-related inquiries, contact [Dev Bhatt](mailto:devbhattwork27@gmail.com) or connect on [LinkedIn](https://linkedin.com/in/dev-bhatt27).
